@@ -36,8 +36,8 @@ int execute(char *ccontent, stack_t **stack, unsigned int ccounter, FILE *ffile)
 	bus.arg = strtok(NULL, " \n\t");
 	while (oopst[ii].opcode && oop)
 	{
-		if (strcmp(oop, oopst[i].opcode) == 0)
-		{	oopst[i].f(stack, ccounter);
+		if (strcmp(oop, oopst[ii].opcode) == 0)
+		{	oopst[ii].f(stack, ccounter);
 			return (0);
 		}
 		ii++;

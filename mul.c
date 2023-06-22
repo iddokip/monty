@@ -14,7 +14,7 @@ void f_mul(stack_t **head, unsigned int ccounter)
 	while (hh)
 	{
 		hh = hh->next;
-		len++;
+		llen++;
 	}
 	if (llen < 2)
 	{

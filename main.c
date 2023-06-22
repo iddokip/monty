@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 	}
 	while (rread_line > 0)
 	{
-		content = NULL;
+		ccontent = NULL;
 		rread_line = getline(&ccontent, &ssize, ffile);
 		bus.content = ccontent;
 		ccounter++;

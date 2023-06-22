@@ -7,12 +7,12 @@
  */
 void f_sub(stack_t **head, unsigned int count)
 {
-	stack_t *aux;
+	stack_t *au;
 	int sub, nodes;
 
 	au = *head;
 	for (nodes = 0; au != NULL; nodes++)
-		aux = aux->next;
+		au = au->next;
 	if (nodes < 2)
 	{
 		fprintf(stderr, "L%d: can't sub, stack too short\n", count);
